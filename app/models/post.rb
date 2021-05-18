@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
-  validates :title, :body, :username
+  validates :title, :body, :username, :user_id
 
-  belongs_to :username
+  belongs_to :username, :user_id
   has_many :comments
 end
